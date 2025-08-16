@@ -4,6 +4,15 @@
   background: url('../img/bg-home.jpg') no-repeat center center/cover; /* Set gambar background */
 }
 
+/* Navbar collapse default disembunyikan */
+#navbarNavAltMarkup {
+  display: none;
+}
+
+#navbarNavAltMarkup.show {
+  display: block;
+}
+
 
 
 /* edit teks navbar */
@@ -41,8 +50,27 @@
     position: absolute;
     top: 38px; /* Jarak dari navbar */
     right: 20px; /* Jarak dari kanan */
-    width: 200px; /* Ukuran logo */
+    max-width: 200px; /* ukuran maksimal */
+    width: 20%;       /* fleksibel sesuai lebar layar */
+    height: auto;     /* biar proporsional */
  }
+
+/* Ukuran lebih kecil di tablet */
+@media (max-width: 768px) {
+  .hutri-logo {
+    max-width: 100px;
+    right: 10px;
+  }
+}
+
+/* Ukuran lebih kecil di smartphone */
+@media (max-width: 480px) {
+  .hutri-logo {
+    max-width: 70px;
+    right: 5px;
+  }
+}
+
 
 
 
