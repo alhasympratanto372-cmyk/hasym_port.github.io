@@ -48,6 +48,7 @@
 /* Logo HUT RI di pojok kanan atas */
 .hutri-logo {
     position: absolute;
+    margin: 10px 0 auto;
     top: 38px; /* Jarak dari navbar */
     right: 20px; /* Jarak dari kanan */
     max-width: 200px; /* ukuran maksimal */
