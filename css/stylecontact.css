@@ -30,7 +30,7 @@ body {
 
 /* Logo HUT RI di pojok kanan atas */
 .hutri-logo {
-    position: absolute;
+    position: relative;
     margin: 10px 0 auto;
     top: 38px; /* Jarak dari navbar */
     right: 20px; /* Jarak dari kanan */
@@ -154,4 +154,20 @@ body {
 }
 
 
+/* MEDIA QUERY */
+/* Mengatur layout pada smartphone */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;    /* susun vertikal (atas-bawah) */
+    align-items: center;       /* center horizontal */
+    text-align: center;        /* teks rata tengah */
+  }
+
+  .contact-info, 
+  .contact-form {
+    margin: 0;                 /* reset margin */
+    width: 100%;               /* ambil penuh lebar container */
+    max-width: 400px;          /* batasi biar tidak terlalu lebar */
+  }
+}
 
