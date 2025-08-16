@@ -1,0 +1,54 @@
+/* Gambar background halaman portfolio */
+body {
+    background-color: #9aa9ff;
+    background-size: cover; /* Agar gambar memenuhi layar */
+}
+
+
+/* Teks Navar */
+.navbar-nav {
+  font-weight: bold;
+  font-size: 18px;
+  color: beige;
+}
+
+.navbar {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Efek bayangan */
+}
+
+
+
+
+/* Logo HUT RI di pojok kanan atas */
+.hutri-logo {
+    position: absolute; /* Posisi absolut di layar */
+    top: 38px; /* Jarak  atas */
+    right: 20px; /* Jarak  kanan */
+    width: 200px; /* Lebar gambar */
+    height: auto; /* Tinggi otomatis mengikuti proporsi */
+}
+
+
+/* Foto profil kecil */
+.profile-small {
+    width: 60px; /* Lebar foto */
+    height: 60px; /* Tinggi foto */
+    border-radius: 50%; /* Membuat bentuk lingkaran */
+    border: 2px solid white; /* Garis pinggir */
+     object-fit: cover; /* Memastikan gambar tetap proporsional */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Efek bayangan */
+    margin-top: 10px;} /* Margin Atas */
+
+
+.tulisannama {
+    font-size: 18px;
+    margin-bottom: 0; /* Hilangkan jarak bawah agar dekat ke h5 */
+    margin-top: 15px; /* Hilangkan jarak atas agar dekat ke h3 */
+}
+
+.tulisanjab {
+    font-size: 10px;
+    margin-top: 0; /* Hilangkan jarak atas agar dekat ke h3 */
+}
+
+

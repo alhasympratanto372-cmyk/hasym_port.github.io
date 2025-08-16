@@ -1,0 +1,77 @@
+
+/* Background halaman Home */
+#home {
+  background: url('../img/bg-home.jpg') no-repeat center center/cover; /* Set gambar background */
+}
+
+
+
+/* edit teks navbar */
+.navbar-nav {
+  font-weight: bold;
+  font-size: 18px;
+  color: beige;
+}
+
+.navbar {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Efek bayangan */
+}
+
+
+
+  /* CSS: Foto profil bulat + efek hover */
+.rounded-circle {
+    width: 200px; /* Lebar foto */
+    height: 200px; /* Tinggi foto */
+    border-radius: 50%; /* Membuat bulat sempurna */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi halus */
+    object-fit: cover; /* Memastikan gambar tetap proporsional */
+}
+.rounded-circle:hover {
+    transform: translateY(-7px); /* Efek melayang ke atas */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Efek bayangan */
+    border: 3px solid white; /* Border saat hover */
+}
+
+
+
+
+/* Logo HUT RI di pojok kanan atas */
+.hutri-logo {
+    position: absolute;
+    top: 38px; /* Jarak dari navbar */
+    right: 20px; /* Jarak dari kanan */
+    width: 200px; /* Ukuran logo */
+ }
+
+
+
+
+/* Container luar slider */
+.slider-container {
+  width: 100%; /* Lebar penuh */
+  overflow: hidden; /*sembunyikan bagian gambar yang keluar */
+  position: relative;
+  display: flex;   /* flexbox */
+  justify-content: center; /* Pusatkan secara horizontal */
+  align-items: center;    /* Pusatkan secara vertikal */
+  height: 300px;  /* Tinggi area slider */
+}
+
+/* Wadah semua gambar */
+.slider {
+  display: flex; /* Gambar sejajar horizontal */
+  transition: transform 0.7s ease-in-out; /* Efek geser smooth */
+}
+
+/* Gambar di dalam slider */
+.slider img {
+  width: 50%; /* Masing-masing gambar 50% dari lebar container */
+  flex-shrink: 0  ; /* Jangan mengecilkan gambar */
+  object-fit: cover;  /* Potong gambar sesuai ukuran */
+}
+
+.footer-fullwidth {
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+}

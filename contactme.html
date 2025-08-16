@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id"> <!-- Bahasa dokumen adalah Indonesia -->
+<head>
+    <meta charset="UTF-8"> <!-- Encoding karakter UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsif di semua perangkat -->
+    <title>Contact Me</title> 
+    
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/stylecontact.css"> 
+</head>
+<body>
+
+   
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #001483;" data-bs-theme="dark">
+        <div class="container">
+            <img src="img/patung monjaya.png" alt="logo" width="70">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="portfolio.html">Portofolio</a>
+                    <a class="nav-link" href="contactme.html">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    
+    <!-- Section Contact -->
+    <section id="home" class="contact-section flex-fill"> <!-- Bagian khusus untuk contact -->
+        
+        <!-- LOGO HUT RI -->
+        <div>
+            <img src="img/hutri80.png" class="hutri-logo" alt="HUT RI 80"> 
+        </div>
+        <div class="container contact-container"> <!-- Container utama -->
+
+            <!-- Bagian kiri: Info Kontak -->
+            <div class="contact-info">
+                <img src="img/profil.jpg" alt="Foto Profil" class="profile-small">
+                <h2>Contact Me</h2> <!-- Judul -->
+                <p><strong>Email :</strong> alhasym.pratanto372@gmail.com</p> <!-- Info Email -->
+                <p><strong>WhatsApp :</strong> +62 852-4233-6356</p> <!-- Info WA -->
+                <p><strong>Location :</strong> Surabaya, Indonesia</p> <!-- Info Lokasi -->
+            </div>
+
+            <!-- Bagian kanan: Form Kontak -->
+            <div class="contact-form">
+                <form id="contactForm"> <!-- Form dengan ID untuk JavaScript -->
+                    
+                    <!-- Input Nama -->
+                    <label for="name">Nama</label> <!-- Label untuk field Nama -->
+                    <input type="text" id="name" name="name" placeholder="Nama lengkap" required> <!-- Input teks -->
+
+                    <!-- Input Email -->
+                    <label for="email">Email</label> <!-- Label untuk field Email -->
+                    <input type="email" id="email" name="email" placeholder="Alamat email" required> <!-- Input email -->
+
+                    <!-- Input Pesan -->
+                    <label for="message">Pesan</label> <!-- Label untuk field Pesan -->
+                    <textarea id="message" name="message" placeholder="Tulis pesan Anda..." required></textarea> <!-- Text area -->
+
+                    <!-- Tombol Kirim -->
+                    <button class="text-center" type="submit">Kirim Pesan</button> <!-- Submit button -->
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer footer-fullwidth">
+        <div class="container">
+            <footer>
+                <p class="text-center mb-2">©APSN 2025 | Hak cipta dilindungi</p>
+            </footer>
+        </div>
+    </div>
+
+    
+    <!-- Memanggil file JavaScript eksternal -->
+    <script src="js/contact.js"></script>
+
+</body>
+</html>
