@@ -5,6 +5,17 @@ body {
 }
 
 
+
+
+/* NAVBAR collapse default disembunyikan */
+#navbarNavAltMarkup {
+  display: none;
+}
+
+#navbarNavAltMarkup.show {
+  display: block;
+}
+
 /* Teks Navar */
 .navbar-nav {
   font-weight: bold;
@@ -19,17 +30,41 @@ body {
 
 
 
+
 /* Logo HUT RI di pojok kanan atas */
 .hutri-logo {
-    position: absolute; /* Posisi absolut di layar */
-    top: 38px; /* Jarak  atas */
-    right: 20px; /* Jarak  kanan */
-    width: 200px; /* Lebar gambar */
-    height: auto; /* Tinggi otomatis mengikuti proporsi */
+    position: absolute;
+    margin: 10px 0 auto;
+    top: 38px; /* Jarak dari navbar */
+    right: 20px; /* Jarak dari kanan */
+    max-width: 200px; /* ukuran maksimal */
+    width: 20%;       /* fleksibel sesuai lebar layar */
+    height: auto;     /* biar proporsional */
+ }
+
+/* Ukuran lebih kecil di tablet */
+@media (max-width: 768px) {
+  .hutri-logo {
+    max-width: 120px;
+    right: 10px;
+    top : 10px;
+  }
+}
+
+/* Ukuran lebih kecil di smartphone */
+@media (max-width: 480px) {
+  .hutri-logo {
+    max-width: 100px;
+    top : 50px;
+    right: 5px;
+  }
 }
 
 
-/* Foto profil kecil */
+
+
+
+/* FOTO PROFIL kecil */
 .profile-small {
     width: 60px; /* Lebar foto */
     height: 60px; /* Tinggi foto */
