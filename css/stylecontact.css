@@ -1,10 +1,18 @@
-
 /* CSS: Background halaman Home */
 body {
   background: url('../img/bg-home.jpg') no-repeat center center/cover; /* Set gambar background */
 ;}
 
 
+
+/* NAVBAR collapse default disembunyikan */
+#navbarNavAltMarkup {
+  display: none;
+}
+
+#navbarNavAltMarkup.show {
+  display: block;
+}
 
 /* Teks Navbar */
 .navbar-nav {
@@ -22,15 +30,38 @@ body {
 
 /* Logo HUT RI di pojok kanan atas */
 .hutri-logo {
-    position: absolute; /* Posisi absolut di layar */
-    top: 38px; /* Jarak dari atas */
+    position: absolute;
+    margin: 10px 0 auto;
+    top: 38px; /* Jarak dari navbar */
     right: 20px; /* Jarak dari kanan */
-    width: 200px; /* Lebar gambar logo */
-    height: auto; /* Tinggi otomatis mengikuti proporsi */
+    max-width: 200px; /* ukuran maksimal */
+    width: 20%;       /* fleksibel sesuai lebar layar */
+    height: auto;     /* biar proporsional */
+ }
+
+/* Ukuran lebih kecil di tablet */
+@media (max-width: 768px) {
+  .hutri-logo {
+    max-width: 120px;
+    right: 10px;
+    top : 10px;
+  }
+}
+
+/* Ukuran lebih kecil di smartphone */
+@media (max-width: 480px) {
+  .hutri-logo {
+    max-width: 100px;
+    top : 50px;
+    right: 5px;
+  }
 }
 
 
-/* Foto profil kecil */
+
+
+
+/* FOTO PROFIL kecil */
 .profile-small {
     width: 150px; /* Lebar foto */
     height: 150px; /* Tinggi foto */
@@ -40,12 +71,15 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Efek bayangan */
     margin-top: 10px;} /* Jarak atas */
 
+
+
+
+/* KIRIM PESAN */
 .contact-section {
     padding: 50px 0; /* Jarak vertikal bagian contact */
     /* background: #f9f9f9; Warna latar */
-
-  
 }
+
 
 .contact-container {
     display: flex; /* Membuat layout sejajar */
